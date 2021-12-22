@@ -19,6 +19,7 @@ popd
 
 export CPPFLAGS="-I${HOME}/opt/gmp-6.2.1/include"
 export LDFLAGS="-L${HOME}/opt/gmp-6.2.1/lib -dynamic"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/opt/gmp-6.2.1/lib/ #probably a terrible idea
 
 # LIBINT
 wget https://github.com/evaleev/libint/archive/v2.6.0.tar.gz
